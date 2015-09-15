@@ -12,18 +12,16 @@
   How to use:
 
   view:
-  $this->widget('ext.CloudFileChooser.DBFileChooser',
-  array(
-  'id' => 'dropbox-file-choose',
-  'itemCssClass' => 'noclass',
-  'itemTagName' => 'a',
-  'linkType' => 'preview',
-  'multiselect' => false,
-  'attributes' => array('href'=> 'javascript:void(0);'),
-  'itemTagText' => 'Samar: Attach from dropbx',
-  //'success'=>"js:function(files){ alert(files[0].name); }",
-  //'cancel'=>"js:function(message){ alert(message); }"
-  )
+  $this->widget('ext.CloudFileChooser.DBFileChooser', array(
+      'app_key' => 'YOUR_APP_KEY',
+      'id' => 'task-dp-attachment',
+      'itemCssClass' => 'one ten',
+      'itemTagName' => 'a',
+      'multiselect' => true,
+      'attributes' => array('href'=> 'javascript:void(0);'),
+      'itemTagText' => 'Samar: Attach from dropbx',
+      'success'=> 'js:function(files){console.log("DBChooser"); console.log(files); }',
+      'cancel'=> 'js:function(files){ console.log("DB choose cancel"); }',
   ));
 
  */
