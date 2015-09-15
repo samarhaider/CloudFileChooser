@@ -12,18 +12,16 @@
   How to use:
 
   view:
-  $this->widget('ext.CloudFileChooser.BoxFileChooser',
-  array(
-  'id' => 'box-file-choose',
-  'itemCssClass' => 'noclass',
-  'itemTagName' => 'a',
-  'linkType' => 'preview',
-  'multiselect' => false,
-  'attributes' => array('href'=> 'javascript:void(0);'),
-  'itemTagText' => 'Samar: Attach from dropbx',
-  //'success'=>"js:function(files){ alert(files[0].name); }",
-  //'cancel'=>"js:function(message){ alert(message); }"
-  )
+  $this->widget('ext.CloudFileChooser.BoxFileChooser', array(
+      'clientId' => 'YOUR_CLIENT_ID',
+      'id' => 'task-box-attachment',
+      'itemCssClass' => 'one ten',
+      'itemTagName' => 'a',
+      'multiselect' => true,
+      'attributes' => array('href'=> 'javascript:void(0);'),
+      'itemTagText' => 'Samar: Attach from Box',
+      'success'=> 'js:function(files){console.log("BoxChooser"); console.log(files); }',
+      'cancel'=> 'js:function(files){ console.log("Box choose cancel"); }',
   ));
 
  */
