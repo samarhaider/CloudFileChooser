@@ -1,2 +1,2 @@
-# DBFileChooser
-Dropbox file chooser for your site for Yii1.x
+# CloudFileChooser Yii 1.x
+User can choose files form cloud like Dropbox, Box(in progress)
