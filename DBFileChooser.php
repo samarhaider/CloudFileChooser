@@ -12,7 +12,7 @@
   How to use:
 
   view:
-  $this->widget('ext.DBFileChooser.DBFileChooser',
+  $this->widget('ext.CloudFileChooser.DBFileChooser',
   array(
   'id' => 'dropbox-file-choose',
   'itemCssClass' => 'noclass',
